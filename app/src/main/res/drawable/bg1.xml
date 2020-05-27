@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+< gradient //漸變
+  android:angle="45" //漸變角度
+  android:endColor="#31ff1c"
+  android:startColor="#0467Be"
+
+  />
+
+            </shape>
+-->
+    <item>
+
+        <shape>
+            <solid android:color="@android:color/white" />
+
+        </shape>
+
+
+    </item>
+
+    <item>
+
+        <clip>
+
+            <shape>
+
+                <gradient android:angle="45"
+                    android:endColor="#31ff1c"
+                    android:startColor="#0467Be"/>
+
+            </shape>
+
+        </clip>
+
+    </item>
+
+</layer-list>

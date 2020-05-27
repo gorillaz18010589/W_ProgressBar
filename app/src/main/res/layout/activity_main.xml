@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+<!--
+        //設定主要進度條顏色
+        android:progressTint="@color/colorAccent"
+        //設定進度條幾個級距
+        android:progress="50"
+        //設定背景進度顏色
+        android:secondaryProgressTint="@color/colorPrimaryDark"
+        //是否啟用不確定模式,因為不確定進度條一值跑
+        android:indeterminate="true"
+
+-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/btnStart"
+        android:layout_gravity="center"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarAnim"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorAccent"
+        android:progress="50"
+        android:secondaryProgressTint="@color/colorPrimaryDark"
+        android:layout_marginTop="12dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorAccent"
+        android:secondaryProgressTint="@color/colorPrimaryDark"
+        android:indeterminate="true"
+        android:layout_marginTop="12dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateDuration="5000"
+        android:indeterminateDrawable="@drawable/bg1"
+        android:layout_marginTop="12dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:indeterminate="true"
+        android:indeterminateDuration="5000"
+        android:indeterminateDrawable="@drawable/bg2"
+
+        />
+
+    <Button
+        android:onClick="changeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
